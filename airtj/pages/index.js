@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Banner from '../components/Banner';
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import LargeCard from '../components/LargeCard';
 import { MediumCard } from '../components/MediumCard';
 import SmallCard from '../components/SmallCard';
-
 export default function Home({ exploreData, cardsData }) {
     return (
         <div className="">
@@ -44,6 +44,7 @@ export default function Home({ exploreData, cardsData }) {
                     buttonText="Get Inspired"
                 />
             </main>
+            <Footer />
         </div>
     );
 }
