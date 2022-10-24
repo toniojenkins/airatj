@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import InfoCard from '../components/InfoCard';
+import MapView from '../components/MapView';
+
 function Search({ searchResults }) {
     const router = useRouter();
     const { location, startDate, endDate, numberGuest } = router.query;
@@ -55,6 +57,10 @@ function Search({ searchResults }) {
                             )
                         )}
                     </div>
+                </section>
+
+                <section className="min-w-[600px]">
+                    <MapView />
                 </section>
             </main>
             <Footer />
