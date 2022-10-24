@@ -59,8 +59,8 @@ function Search({ searchResults }) {
                     </div>
                 </section>
 
-                <section className="min-w-[600px]">
-                    <MapView />
+                <section className="hidden xl:inline-flex xl:min-w-[600px]">
+                    <MapView searchResults={searchResults} />
                 </section>
             </main>
             <Footer />
