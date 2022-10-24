@@ -12,6 +12,11 @@ function Search({ searchResults }) {
     const formattedStartDate = format(new Date(startDate), 'dd MMMM yy');
     const formattedEndDate = format(new Date(endDate), 'dd MMMM yy');
     const range = `${formattedStartDate} - ${formattedEndDate}`;
+    const place = () => {
+        router.push({
+            pathname: '/place',
+        });
+    };
 
     return (
         <div>
